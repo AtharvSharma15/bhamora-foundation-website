@@ -1,0 +1,13 @@
+{
+  "name": "bhamora-frontend-shim",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shim package that forwards yarn start/build/lint to the Next.js project at /app",
+  "scripts": {
+    "dev": "cd /app && yarn dev",
+    "build": "cd /app && yarn build",
+    "start": "cd /app && yarn start",
+    "start:prod": "cd /app && yarn start:prod",
+    "lint": "cd /app && yarn lint"
+  }
+}

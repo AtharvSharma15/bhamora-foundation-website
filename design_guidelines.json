@@ -1,0 +1,160 @@
+{
+  "theme": "LIGHT",
+  "archetype": "1 (Organic & Earthy) + 5 (Luxury/Premium Blend)",
+  "domain": "Nonprofit Foundation",
+  "design_goals": [
+    "Premium, elegant, professional",
+    "Clean white space",
+    "Luxury nonprofit aesthetic",
+    "High trust and credibility",
+    "Smooth animations",
+    "Excellent mobile responsiveness",
+    "Modern corporate design"
+  ],
+  "typography": {
+    "pairing": {
+      "display": "Fraunces (Premium, Editorial Serif)",
+      "sans": "Manrope (Clean, Humanist Sans)",
+      "reasoning": "Avoids generic Inter/Playfair. Fraunces brings an 'Old Money Tech' authoritative trust, while Manrope provides clean legibility for dense information."
+    },
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl font-serif font-light tracking-tight text-[#1F2937] leading-none",
+      "h2": "text-3xl sm:text-4xl font-serif font-light tracking-tight text-[#1F2937]",
+      "h3": "text-2xl sm:text-3xl font-serif font-normal text-[#1F2937]",
+      "h4": "text-lg sm:text-xl font-sans font-semibold text-[#1F2937]",
+      "body": "text-base font-sans font-normal text-[#4B5563] leading-relaxed",
+      "overline": "text-xs font-sans uppercase tracking-[0.2em] text-[#F59E0B]"
+    }
+  },
+  "colors": {
+    "primary": {
+      "hex": "#0F4C81",
+      "usage": "Brand anchor, key buttons, dark footer background, text highlights",
+      "tailwind": "bg-[#0F4C81] text-[#0F4C81] border-[#0F4C81]"
+    },
+    "secondary": {
+      "hex": "#F59E0B",
+      "usage": "Warm amber gold for accents, active states, donation highlights, award borders, success metrics",
+      "tailwind": "bg-[#F59E0B] text-[#F59E0B] border-[#F59E0B]"
+    },
+    "background": {
+      "hex": "#FAFAF7",
+      "usage": "Warm off-white for main page background to give an organic, high-end paper feel",
+      "tailwind": "bg-[#FAFAF7]"
+    },
+    "surface": {
+      "hex": "#FFFFFF",
+      "usage": "Pure white for cards, floating menus, modals",
+      "tailwind": "bg-[#FFFFFF]"
+    },
+    "text_primary": {
+      "hex": "#1F2937",
+      "usage": "Main headings and high-contrast text",
+      "tailwind": "text-[#1F2937]"
+    },
+    "text_muted": {
+      "hex": "#4B5563",
+      "usage": "Body copy and subtitles",
+      "tailwind": "text-[#4B5563]"
+    }
+  },
+  "layout_and_spacing": {
+    "scale": {
+      "section_padding": "py-20 md:py-32",
+      "container_padding": "px-6 md:px-12 lg:px-24",
+      "grid_gap": "gap-8 lg:gap-12",
+      "item_gap": "gap-4"
+    },
+    "borders_and_shadows": {
+      "radius": "rounded-[20px]",
+      "shadow": "shadow-[0_10px_40px_rgba(0,0,0,0.08)]",
+      "shadow_hover": "shadow-[0_20px_60px_rgba(0,0,0,0.12)]"
+    },
+    "glassmorphism": "backdrop-blur-xl bg-white/80 border-b border-white/20"
+  },
+  "components_and_sections": {
+    "navbar": {
+      "behavior": "Sticky, transparent at top, solid on scroll",
+      "top_state": "bg-transparent text-white border-transparent",
+      "scrolled_state": "backdrop-blur-xl bg-white/90 text-[#1F2937] shadow-[0_10px_40px_rgba(0,0,0,0.05)]",
+      "cta_button": "bg-[#F59E0B] text-white hover:bg-[#D97706] rounded-[20px] px-6 py-2 transition-all duration-300 shadow-lg",
+      "test_id": "data-testid='navbar'"
+    },
+    "hero": {
+      "composition": "Relative h-[90vh] min-h-[600px] flex items-center justify-center text-center overflow-hidden",
+      "overlay": "bg-black/50 (Never go darker, ensure image is visible)",
+      "content": "Large bold Fraunces H1 headline, strong CTAs",
+      "counters": "Animated impact stats floating above the bottom edge of hero in a glassmorphic card container"
+    },
+    "card_system": {
+      "program_card": "bg-white rounded-[20px] shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)]. Internal padding p-8.",
+      "award_card": "bg-[#FAFAF7] border border-[#F59E0B]/30 rounded-[20px] p-6. Gold accent styling.",
+      "impact_card": "Minimalist bento grid style, large CountUp numbers in #0F4C81, subtle #F59E0B accent line.",
+      "success_story": "Image on top (aspect-video), content below with Fraunces heading and 'Read More' subtle link."
+    },
+    "masonry_gallery": {
+      "ux": "Masonry layout (columns-2 md:columns-3 lg:columns-4). Smooth zoom hover (scale-105 duration-300 ease-in-out) on images. Click to open full-screen lightbox.",
+      "filter": "Pill-shaped category filters (All, Education, Healthcare, Women) above the gallery."
+    },
+    "volunteer_form": {
+      "ux": "Multi-step wizard UI. Step indicators (1/3) at top.",
+      "fields": "2-3 fields per step to avoid cognitive overload.",
+      "inputs": "Rounded-[20px] borders, soft focus rings (focus:ring-[#0F4C81]/20).",
+      "trust_badges": "Include 'Secure submission' and 'Privacy Protected' under the submit button with Radix/Lucide lock icon."
+    },
+    "donation_card": {
+      "layout": "Donation amount chips ($25, $50, $100, Custom).",
+      "impact_preview": "Dynamic text below chips (e.g., 'Your $50 provides 2 months of education').",
+      "trust_badges": "SSL Secure, 100% Transparency, Tax Deductible (80G/12A).",
+      "cta": "Large, bold bg-[#0F4C81] text-white rounded-[20px] py-4 w-full text-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+    },
+    "footer": {
+      "composition": "Premium dark footer using bg-[#0F4C81] or extremely dark slate bg-[#111827] with #0F4C81 accents. Text in text-white/80.",
+      "newsletter": "Input with rounded-full or rounded-[20px] bg-white/10 border border-white/20 text-white placeholder:text-white/50.",
+      "columns": "Logo/Mission, Quick Links, Programs, Contact Info, Social Icons."
+    }
+  },
+  "animation_choreography": {
+    "entry_reveal": "Framer Motion: initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: 'easeOut' }}. Use viewport={{ once: true, margin: '-100px' }}.",
+    "hover_states": "tailwind classes: transition-all duration-300 ease-in-out.",
+    "floating_awards": "Framer Motion: animate={{ y: [-5, 5, -5] }} transition={{ repeat: 'Infinity', duration: 4, ease: 'easeInOut' }}.",
+    "counters": "react-countup triggered by intersection observer when scrolled into view.",
+    "staggered_lists": "Framer Motion variants with staggerChildren: 0.1 for cards in a grid."
+  },
+  "accessibility_and_responsive": {
+    "mobile_behavior": "Images max-h-[60vh] on mobile. Stack grids to columns-1. Decrease padding to px-6 and py-16.",
+    "reduced_motion": "Wrap Framer Motion animations with useReducedMotion hook. If true, set initial/animate to opacity only (no y-axis translation).",
+    "contrast": "Ensure white text on #F59E0B meets WCAG 4.5:1 ratio, use text-white with drop-shadow or text-[#1F2937] on gold if needed.",
+    "testing": "Add data-testid='kebab-case-name' to all buttons, links, form inputs, and major sections."
+  },
+  "media_assets": {
+    "education": [
+      "/images/education/children learning.jpg",
+      "/images/education/digital literacy.jpg",
+      "/images/education/lietaracy class.jpg"
+    ],
+    "healthcare": [
+      "/images/healthcare/health camp.png",
+      "/images/healthcare/heltcare initative.jpg",
+      "/images/healthcare/preventive helathcare.jpg"
+    ],
+    "women_empowerment": [
+      "/images/women/women empoverment.jpg",
+      "/images/women/self help group.jpg",
+      "/images/women/women education.jpg"
+    ],
+    "awards": [
+      "/images/award/best ngo.jpg",
+      "/images/award/best performance.jpg",
+      "/images/award/women impoverment award.jpg",
+      "/images/award/conmunity healt comapnion.jpg",
+      "/images/award/excellence in education.jpg",
+      "/images/award/best ngo in city.jpg",
+      "/images/award/niti aayog award.jpg"
+    ],
+    "leadership": [
+      "/images/leadership/founder.jpeg",
+      "/images/leadership/Preeti-Bhatt.png"
+    ]
+  }
+}
