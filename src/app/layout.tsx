@@ -1,6 +1,7 @@
 import './globals.css';
 import Script from 'next/script';
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
 import { Fraunces, Manrope } from 'next/font/google';
 import Navbar from '@/components/Navbar';
@@ -23,21 +24,6 @@ export const metadata: Metadata = {
   title: 'Bhamora Foundation — Empowering Communities, Transforming Lives',
   description:
     'Bhamora Foundation works towards a better future for all through education, healthcare, women empowerment, and sustainable community development.',
-  keywords: [
-    'Bhamora Foundation',
-    'NGO India',
-    'Education',
-    'Healthcare',
-    'Women Empowerment',
-    'Community Development',
-    'Donate India',
-  ],
-  openGraph: {
-    title: 'Bhamora Foundation — Empowering Communities, Transforming Lives',
-    description:
-      'Working towards a better future for all through education, healthcare, and sustainable development initiatives.',
-    type: 'website',
-  },
 };
 
 export default function RootLayout({
@@ -51,20 +37,18 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${display.variable} ${sans.variable}`}
     >
-      <head>
-        <Script
-          id="google-adsense"
-          async
-          strategy="afterInteractive"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8409995603224151"
-          crossOrigin="anonymous"
-        />
-      </head>
-
       <body
         suppressHydrationWarning
         className="bg-canvas font-sans text-ink antialiased"
       >
+        <Script
+          id="google-adsense"
+          strategy="afterInteractive"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8409995603224151"
+          crossOrigin="anonymous"
+        />
+
         <Navbar />
 
         <main className="min-h-screen">
@@ -74,6 +58,7 @@ export default function RootLayout({
         <Footer />
 
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
